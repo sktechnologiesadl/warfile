@@ -13,10 +13,10 @@ RUN git clone https://github.com/sktechnologiesadl/warfile.git
 RUN mkdir /opt/tomcat
 
 WORKDIR /opt/tomcat
-ADD https://dlcdn.apache.org/tomcat/tomcat-9/v9.0.70/bin/apache-tomcat-9.0.70.tar.gz .
-RUN tar zxvf apache-tomcat-9.0.70.tar.gz &&\
-    mv apache-tomcat-9.0.70/* /opt/tomcat/ &&\
-    rm -rf apache-tomcat-9.0.70.tar.gz
+ADD https://dlcdn.apache.org/tomcat/tomcat-9/v9.0.72/bin/apache-tomcat-9.0.72.tar.gz .
+RUN tar zxvf apache-tomcat-9.0.72.tar.gz &&\
+    mv apache-tomcat-9.0.72/* /opt/tomcat/ &&\
+    rm -rf apache-tomcat-9.0.72.tar.gz
 EXPOSE 8080
 
 # Copy the war file and config files 
