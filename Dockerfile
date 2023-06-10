@@ -13,7 +13,7 @@ RUN git clone https://github.com/sktechnologiesadl/warfile.git
 RUN mkdir /opt/tomcat
 
 WORKDIR /opt/tomcat
-ADD https://dlcdn.apache.org/tomcat/tomcat-9/v9.0.76/bin/apache-tomcat-9.0.72.tar.gz .
+ADD https://dlcdn.apache.org/tomcat/tomcat-9/v9.0.76/bin/apache-tomcat-9.0.76.tar.gz .
 RUN tar zxvf apache-tomcat-9.0.76.tar.gz &&\
     mv apache-tomcat-9.0.76/* /opt/tomcat/ &&\
     rm -rf apache-tomcat-9.0.76.tar.gz
